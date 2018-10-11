@@ -1,0 +1,205 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Montclair State: IC:D/A</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{% static 'css/home-styles.css' %}" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">MSU Internet Censorship: Detection/Avoidance</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#about">About
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#publications">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header - set background image for the header -->
+    <header class="py-5 bg-image-full" style="background-image: url({% static 'img/bg2.jpg' %});">
+        <h1 id="head-text" class ="text-center text-white"> Internet Censorship Detection and Avoidance</h1>
+    </header>
+    <!-- About -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h1 class="msu-red">About</h1>
+
+        <div class="container">
+         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>Internet censorship is the control or suppression of what can be accessed, published, or viewed on the Internet enacted by regulators, or on their own initiative. Individuals and organizations may engage in self-censorship for moral, religious, or business reasons, to conform to societal norms, due to intimidation, or out of fear of legal or other consequences.[1]</p>
+    
+          <p>The extent of Internet censorship varies on a country-to-country basis. While most democratic countries have moderate Internet censorship, other countries go as far as to limit the access of information such as news and suppress discussion among citizens.[1] Internet censorship also occurs in response to or in anticipation of events such as elections, protests, and riots. An example is the increased censorship due to the events of the Arab Spring. Other areas of censorship include copyrights, defamation, harassment, and obscene material.</p>
+          <img class="float-left body-pic" src="{% static 'img/polarization.jpg' %}">
+          <p>Support for and opposition to Internet censorship also varies. In a 2012 Internet Society survey 71% of respondents agreed that "censorship should exist in some form on the Internet". In the same survey 83% agreed that "access to the Internet should be considered a basic human right" and 86% agreed that "freedom of expression should be guaranteed on the Internet". According to GlobalWebIndex, over 400 million people use virtual private networks to circumvent censorship or for increased level of privacy.[2] Many of the challenges associated with Internet censorship are similar to those for offline censorship of more traditional media such as newspapers, magazines, books, music, radio, television, and film. One difference is that national borders are more permeable online: residents of a country that bans certain information can find it on websites hosted outside the country. </p>
+          <p>Thus censors must work to prevent access to information even though they lack physical or legal control over the websites themselves. This in turn requires the use of technical censorship methods that are unique to the Internet, such as site blocking and content filtering.[3] locking and filtering can be based on relatively static blacklists or be determined more dynamically based on a real-time examination of the information being exchanged. Blacklists may be produced manually or automatically and are often not available to non-customers of the blocking software. Blocking or filtering can be done at a centralized national level, at a decentralized sub-national level, or at an institutional level, for example in libraries, universities or Internet cafes.[1]</p>
+          <p>B Blocking and filtering may also vary within a country across different ISPs.[8] Countries may filter sensitive content on an ongoing basis and/or introduce temporary filtering during key time periods such as elections. In some cases the censoring authorities may surreptitiously block content to mislead the public into believing that censorship has not been applied. This is achieved by returning a fake "Not Found" error message when an attempt is made to access a blocked website.[9] Unless the censor has total control over all Internet-connected computers, such as in North Korea (who employ an intranet that only privileged citizens can access), or Cuba, total censorship of information is very difficult or impossible to achieve due to the underlying distributed technology of the Internet. Pseudonymity and data havens (such as Freenet) protect free speech using technologies that guarantee material cannot be removed and prevents the identification of authors. Technologically savvy users can often find ways to access blocked content. Nevertheless, blocking remains an effective means of limiting access to sensitive information for most users when censors, such as those in China, are able to devote significant resources to building and maintaining a comprehensive censorship system.[3]</p>
+        </div>
+      </div>
+    </section>
+    <!-- Projects -->
+    <section id="projects" class="py-5 bg-alt">
+      <div class = "container">
+        <h1 class="msu-red">Projects</h1>
+          <div class="container proj-box">
+              <img class ="float-left body-pic" src="{% static 'img/700x400.png' %}"  style="width:350px;height:220px;">
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
+              <button class="float-right btn" data-toggle="collapse" data-target="#p1-c">Expand</button>
+
+              <div id="p1-c" class="collapse expan-div">
+                  Lorem ipsum dolor text....
+              </div>
+          </div>
+          <div class="container proj-box">
+              <img class ="float-left body-pic" src="{% static 'img/700x400.png' %}"  style="width:350px;height:220px;">
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
+              <button class="float-right btn" data-toggle="collapse" data-target="#p2-c">Expand</button>
+              <div id="p2-c" class="collapse expan-div">
+                  Lorem ipsum dolor text....
+              </div>
+         </div>
+        </div>
+    </section>
+    <!-- Publications -->
+    <section id="publications" class="py-5">
+      <div class="container">
+        <h1 class = "msu-red">Publications</h1>
+          <div class="container pub-box">
+              <p class="lead">Relevant Publication One</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
+                <a href="https://www.google.com/" class="btn float-right" role="button">Link</a>
+          </div>
+          <div class="container pub-box">
+              <p class="lead">Relevant Publication Two</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
+                <a href="https://www.google.com/" class="btn float-right" role="button">Link</a>
+          </div>
+          <div class="container pub-box">
+              <p class="lead">Relevant Publication Three</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
+                <a href="https://www.google.com/" class="btn float-right" role="button">Link</a>
+          </div>
+      
+      </div>
+    </section>
+    <!-- Team -->
+    <section id="team" class="py-5 bg-alt">
+     <div id="t-cont" class="container">
+     <h1 class="msu-red">Team</h1>
+         <div class="container mem-box-cont">
+             <h3>Faculty</h3>
+             <div class="container mem-box">
+                 <div id="t-img"> <img class="mem-pic" src="{% static 'img/cl.jpg' %}"></div>
+                 <div class ="b-text">
+                     <div id="t-nt"> <p class="lead msu-red">Christopher Leberknight</p><p>Associate Professor</p></div>
+                     <div id="t-desc"><p id ="bio">Chris is an Associate Professor of Computer Science at Montclair State University and Director of the Network Science Lab (NETSCI).  His primary field of research is network science which focuses on the modeling and analysis of networks from the technological (network and algorithmic topics), ecological, and social perspectives.  His research has been published in top tier journals as well as national and international conferences. In addition to his academic experience Chris has over 10 years of professional experience in the computer and telecommunication industries and served as the CEO for two start-up companies. He also has experience with decision support and location aware systems (patent # 7,406,448). Chris is a member of the IEEE, Association of Computing Machinery, and the Association for Information Systems and serves on the editorial board for the Journal of Privacy and Information Security, International Journal of Internet of Things and Cyber-Assurance, and the International Journal of E-Politics. </p></div>
+                 </div>
+             </div>
+             <div class="container mem-box">
+                 <div id="t-img"> <img class="mem-pic" src="{% static 'img/af.png' %}" ></div>
+                 <div class ="b-text">
+                     <div id="t-nt"> <p class="lead msu-red">Anna Feldman</p><p>Professor</p></div>
+                     <div id="t-desc"><p id="bio">Anna is a computational linguist. She has worked on a number of different projects, such as cross-lingual approaches to morpho-syntactic tagging,  learner corpora, and automatic idiom recognition. She is currently a Co-PI (with Chris Leberknight) on the project that applies linguistic insights to measure and circumvent Internet censorship.  She co-authored a book on resource-light morphology, co-edited nine volumes on various topics related to NLP and published 40+ peer-reviewed articles in journals and conference proceedings. Her work has been funded by the US Army Research Lab, the US Air Force Research Lab, the US National Science Foundation.</p></div>
+                 </div>
+             </div>
+             <div class="container mem-box">
+                 <div id="t-img"> <img class="mem-pic" src="{% static 'img/ej.jpg' %}"></div>
+                 <div class ="b-text">
+                     <div id="t-nt"> <p class="lead msu-red">Eric Joyce</p><p>Adjunct Professor</p></div>
+                     <div id="t-desc"><p id ="bio">Eric is an adjunct professor of Computer Science. His research interests include artificial intelligence, machine learning, natural language processing, heuristic and oppositional search, and game theory.</p></div>
+                 </div>
+             </div>
+         </div>
+         <div class="container mem-box-cont">
+              <h3>Students</h3>
+             <div class="container mem-box">
+                 <div id="t-img"> <img class="mem-pic" src="{% static 'img/kk.jpg' %}"></div>
+                 <div class ="b-text">
+                     <div id="t-nt"> <p class="lead msu-red">Kateryna Kaplun</p><p>Masters Student</p></div>
+                     <div id="t-desc"><p id ="bio">Kateryna received her undergraduate degree in Mathematics and Justice Studies from Montclair State University. Currently, she is pursuing a master's degree in Statistics at Montclair State University. Her research interests include interdisciplinary topics that relate mathematics, statistics, computer science, and justice studies. </p></div>
+                 </div>
+             </div>
+             <div class="container mem-box">
+                 <div id="t-img"></div>
+                 <div class ="b-text no-pic">
+                     <div id="t-nt"> <p class="lead msu-red">Kei Yin Ng</p><p>Masters Student</p></div>
+                     <div id="t-desc"><p id ="bio">Kei received her undergraduate degree from the Chinese University of Hong Kong in the field of Japanese Studies. She is currently pursuing a master's degree at Montclair State University concentrating on Computational Linguistics. She is interested in natural language processing and text analytics.</p></div>
+                 </div>
+             </div>
+             <div class="container mem-box">
+                 <div id="t-img"> <img class="mem-pic" src="{% static 'img/mk.jpg' %}"></div>
+                 <div class ="b-text">
+                     <div id="t-nt"> <p class="lead msu-red">Matthew Kadish</p><p>Masters Student</p></div>
+                     <div id="t-desc"><p id ="bio">Matthew received his undergraduate degree from Montclair State University, majoring in English and minoring in Linguistics and German. His future graduate studies will focus on linguistics, and his previous experience includes research with Dr. Jonathan Howell on the nuances of prosody.</p></div>
+                 </div>
+             </div>
+             <div class="container mem-box">
+                 <div id="t-img"> <img class="mem-pic" src="{% static 'img/ms1.jpg' %}"></div>
+                 <div class ="b-text">
+                     <div id="t-nt"> <p class="lead msu-red">Micheal Shehata</p><p>Masters Student</p></div>
+                     <div id="t-desc"><p id ="bio">Michael recently received his BA in Linguistics from Montclair State University in January 2018, and is currently pursuing a graduate certificate in Computational Linguistics. Born and raised in Egypt, Micheal is a native Arabic speaker. His areas of interest include Machine Learning, Artificial intelligence, and Data Analysis. He is currently working on a publication in Arabic/English Code Switching among native Arabic speakers. where he will be collecting and analyzing Arabic data from authors who were sentenced to jail when they wrote criticizing their governments. Using this data, he hopes to find a pattern showing what is more likely to be censored based on the collected data.</p></div>
+                 </div>
+             </div>
+             <div class="container mem-box">
+                 <div id="t-img"> <img class="mem-pic" src="{% static 'img/mg.jpg' %}"></div>
+                 <div class ="b-text">
+                     <div id="t-nt"> <p class="lead msu-red">Matthew Goldeck</p><p>Undergraduate Student</p></div>
+                     <div id="t-desc"><p id ="bio">Matthew is pursuing a BS in Computer Science at Montclair State University. He is interested in exploring the applications of data analysis, with a particular focus on big data and machine learning. </p></div>
+                 </div>
+             </div>
+         </div>
+     </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Relevant details, emails, external links, etc</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'jquery.min.js' %}"></script>
+    <script src="{% static 'bootstrap.bundle.min.js' %}"></script>
+
+  </body>
+
+</html>
