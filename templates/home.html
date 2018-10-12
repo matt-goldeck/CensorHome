@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Montclair State: IC:D/A</title>
+    <title>MSU NetSci Lab</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{% static 'bootstrap.min.css' %}" rel="stylesheet">
@@ -24,7 +24,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">MSU Internet Censorship: Detection/Avoidance</a>
+        <a class="navbar-brand" href="#">MSU NetSci</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -51,7 +51,7 @@
 
     <!-- Header - set background image for the header -->
     <header class="py-5 bg-image-full" style="background-image: url({% static 'img/bg2.jpg' %});">
-        <h1 id="head-text" class ="text-center text-white"> Internet Censorship Detection and Avoidance</h1>
+        <h1 id="head-text" class ="text-center text-white">The Network Science Lab at MSU</h1>
     </header>
     <!-- About -->
     <section id="about" class="py-5">
@@ -59,14 +59,8 @@
         <h1 class="msu-red">About</h1>
 
         <div class="container">
-         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <p>Internet censorship is the control or suppression of what can be accessed, published, or viewed on the Internet enacted by regulators, or on their own initiative. Individuals and organizations may engage in self-censorship for moral, religious, or business reasons, to conform to societal norms, due to intimidation, or out of fear of legal or other consequences.[1]</p>
-    
-          <p>The extent of Internet censorship varies on a country-to-country basis. While most democratic countries have moderate Internet censorship, other countries go as far as to limit the access of information such as news and suppress discussion among citizens.[1] Internet censorship also occurs in response to or in anticipation of events such as elections, protests, and riots. An example is the increased censorship due to the events of the Arab Spring. Other areas of censorship include copyrights, defamation, harassment, and obscene material.</p>
-          <img class="float-left body-pic" src="{% static 'img/polarization.jpg' %}">
-          <p>Support for and opposition to Internet censorship also varies. In a 2012 Internet Society survey 71% of respondents agreed that "censorship should exist in some form on the Internet". In the same survey 83% agreed that "access to the Internet should be considered a basic human right" and 86% agreed that "freedom of expression should be guaranteed on the Internet". According to GlobalWebIndex, over 400 million people use virtual private networks to circumvent censorship or for increased level of privacy.[2] Many of the challenges associated with Internet censorship are similar to those for offline censorship of more traditional media such as newspapers, magazines, books, music, radio, television, and film. One difference is that national borders are more permeable online: residents of a country that bans certain information can find it on websites hosted outside the country. </p>
-          <p>Thus censors must work to prevent access to information even though they lack physical or legal control over the websites themselves. This in turn requires the use of technical censorship methods that are unique to the Internet, such as site blocking and content filtering.[3] locking and filtering can be based on relatively static blacklists or be determined more dynamically based on a real-time examination of the information being exchanged. Blacklists may be produced manually or automatically and are often not available to non-customers of the blocking software. Blocking or filtering can be done at a centralized national level, at a decentralized sub-national level, or at an institutional level, for example in libraries, universities or Internet cafes.[1]</p>
-          <p>B Blocking and filtering may also vary within a country across different ISPs.[8] Countries may filter sensitive content on an ongoing basis and/or introduce temporary filtering during key time periods such as elections. In some cases the censoring authorities may surreptitiously block content to mislead the public into believing that censorship has not been applied. This is achieved by returning a fake "Not Found" error message when an attempt is made to access a blocked website.[9] Unless the censor has total control over all Internet-connected computers, such as in North Korea (who employ an intranet that only privileged citizens can access), or Cuba, total censorship of information is very difficult or impossible to achieve due to the underlying distributed technology of the Internet. Pseudonymity and data havens (such as Freenet) protect free speech using technologies that guarantee material cannot be removed and prevents the identification of authors. Technologically savvy users can often find ways to access blocked content. Nevertheless, blocking remains an effective means of limiting access to sensitive information for most users when censors, such as those in China, are able to devote significant resources to building and maintaining a comprehensive censorship system.[3]</p>
+          <p>The Network Science Lab (NetSci) in the Department of Computer Science at Montclair State University is dedicated to the study of the intersection between social behavior and computational systems.  NetSci supports a broad range of topics including: Internet censorship, Internet of Things (IoT), security and privacy, and the modeling and analysis of technological and online social networks.  Researchers in lab have expertise in network analytic methods, machine learning, and natural language processing.</p>
+          <p>An experimental test-bed enables exploration and simulation activities that support the underlying research conducted in the lab.  <a href="/static/img/net_arch.png">Overview of the network topology</a> that supports our research. </p>
         </div>
       </div>
     </section>
@@ -74,50 +68,74 @@
     <section id="projects" class="py-5 bg-alt">
       <div class = "container">
         <h1 class="msu-red">Projects</h1>
-          <div class="container proj-box">
-              <img class ="float-left body-pic" src="{% static 'img/700x400.png' %}"  style="width:350px;height:220px;">
-              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
-              <button class="float-right btn" data-toggle="collapse" data-target="#p1-c">Expand</button>
-
-              <div id="p1-c" class="collapse expan-div">
-                  Lorem ipsum dolor text....
-              </div>
+        <h2 class="msu-red">Internet Censorship Detection</h2>
+        <div style="padding-bottom: 60px;" class="container proj-box">
+              <img class ="float-left body-pic" src="{% static 'img/detect.png' %}"  style="width:300px;height:220px;">
+              <p style='padding-top:30px;' class="lead msu-red">Detecting Censored Content</p>
+              <p> Internet regulation in the form of online censorship and Internet shutdowns have been increasing over recent years. This project involves the development of a natural language processing (NLP) application for performing cross country probing that conceals the exact location of the originating request.</p>
           </div>
-          <div class="container proj-box">
-              <img class ="float-left body-pic" src="{% static 'img/700x400.png' %}"  style="width:350px;height:220px;">
-              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
-              <button class="float-right btn" data-toggle="collapse" data-target="#p2-c">Expand</button>
-              <div id="p2-c" class="collapse expan-div">
-                  Lorem ipsum dolor text....
-              </div>
-         </div>
-        </div>
+          <div style="padding-bottom: 60px;" class="container proj-box">
+              <img class ="float-left body-pic" src="{% static 'img/controversial.png' %}"  style="width:300px;height:220px;vertical-align:middle;">
+              <p style='padding-top:50px;' class="lead msu-red">Classifiying Controversial Content</p>
+              <p>This project investigates the performance of multi-class classifiers using novel linguistic features in order to determine the most useful classifier for detecting controversial news articles.</p>
+          </div>
+          <div class="container no-body-pic proj-box" style="padding-top:40px">
+              <p class="lead msu-red">Linguistic Fingerprinting</p>
+              <p>This project investigates linguistic characteristics of censored and uncensored posts on a number of topics to build a classifier that predicts censorship decisions independent of discussion topics.</p>
+          </div>
+          <div class="container no-body-pic proj-box">
+              <p class="lead msu-red">Internet Shutdowns</p>
+              <p>The objective of this research is to provide a methodology for measuring the financial impacts of Internet outages. The financial impacts are measured against a Nation’s Gross Domestic Product (GDP) for countries to project the aftermath of Internet outage episodes.</p>
+          </div>
+          <div class="container no-body-pic proj-box">
+              <p class="lead msu-red">Disinformation</p>
+              <p>TBD</p>
+          </div>
+          <div class="container no-body-pic proj-box">
+              <p class="lead msu-red">Internet Censorship Evasion</p>
+              <p>TBD</p>
+          </div>
+          <h2 class="msu-red">IoT</h2>
+          <div class="container no-body-pic proj-box">
+              <p class="lead msu-red">Remote Radio Frequency Analysis and Jamming on the Internet of Things</p>
+              <p>This project investigates radio frequency (RF) jamming, selective RF (SRF) jamming, and undetectable selective RF (USRF) jamming in a step-by-step approach using several categories of RF devices, starting with simple RF doorbells. Increasingly sophisticated devices will be tested and documented, with the ultimate goal of producing an easy to use tool consisting of hardware and software to be used for testing the security and resilience of Internet of Things IoT devices.</p>
+          </div>
+          <div class="container no-body-pic proj-box">
+              <p class="lead msu-red">PiMesh – Implementation of Mesh Network on Multiple Raspberry Pi’s</p>
+              <p>This work explores optimal routing strategies for wireless mesh networks using a series of Raspberry Pi’s.   implementing a wireless mesh network on multiple Raspberry Pi’s.  Topics investigated in this research include fundamental challenges with the mesh network such as battery power, latency and redundancy.</p>
+          </div>
+
+          </div>
     </section>
     <!-- Publications -->
     <section id="publications" class="py-5">
       <div class="container">
         <h1 class = "msu-red">Publications</h1>
+        <div class="container">
+          <h2 class="lead msu-red">Workshops</h2>
           <div class="container pub-box">
-              <p class="lead">Relevant Publication One</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
-                <a href="https://www.google.com/" class="btn float-right" role="button">Link</a>
+              <h3 class="lead">NLP4IF -<a href="https://cbrew.github.io/nlp4if/" class="btn" role="button">Link</a></h3>
+              <p>First Workshop on NLP for Internet Freedom – A workshop dedicated to NLP methods that potentially contribute (either positively or negatively) to the free flow of information on the Internet, or to our understanding of the issues that arise in this area.</p>
+              <p>Venue: COLING 2018, Santa Fe, NM, USA, August 20</p>
+              <p>Organizers:  Chris Brew, Anna Feldman and Chris Leberknight</p>
           </div>
-          <div class="container pub-box">
-              <p class="lead">Relevant Publication Two</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
-                <a href="https://www.google.com/" class="btn float-right" role="button">Link</a>
-          </div>
-          <div class="container pub-box">
-              <p class="lead">Relevant Publication Three</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
-                <a href="https://www.google.com/" class="btn float-right" role="button">Link</a>
-          </div>
-      
-      </div>
+        </div>
+        <div class="container">
+          <h2 class = "lead msu-red">Published Work</h2>
+          <ul>
+            <li>Leberknight, C., Raveendran, N. (2018). Internet Censorship and Economic Impacts: A case study of Internet outages in India. AMCIS 2018 Proceedings, 317. </li>
+            <li>Ng, K. Y., Feldman, A., & Leberknight, C. (2018, July). Detecting Censorable Content on Sina Weibo: A Pilot Study. In Proceedings of the 10th Hellenic Conference on Artificial Intelligence (p. 41). ACM.</li>
+            <li>Kaplun, K., Leberknight, C., & Feldman, A. (2018, July). Controversy and Sentiment: An Exploratory Study. In Proceedings of the 10th Hellenic Conference on Artificial Intelligence (p. 37). ACM. </li>
+            <li>Kaplun, K., Leberknight, C., & Feldman, A. (2018). A Comparison of Lexicons for Detecting Controversy. In Proceedings of the LREC 2018 Workshop: Natural Language Processing meets Journalism III, Miyazaki (Japan)</li>
+            <li>Ng Kei Y., Feldman A., Peng J. and Leberknight, C. (2018). Linguistic Characteristics of Censorable Language on SinaWeibo. In Proceedings of The COLING 1st Natural Language Processing for Information Freedom workshop) </li>
+          </ul>
+        </div>
+        <div class="container">
+          <h2 class="lead msu-red">Grants</h2>
+          <ul>
+            <li>NSF Award Number: 1704113.  SaTC: CORE: Medium: Collaborative: A Linguistically-Informed Approach for Measuring and Circumventing Internet Censorship, Principal Investigator: <b>Chris Leberknight</b>; Co-Principal Investigator: <b>Anna Feldman</b>, (August 15, 2017 – August 31 2020).</li>
+            <li>NSF Award Number: 1259758.  The NECST Program Networking and Engaging in Computer Science and Information Technology Program,  Principal Investigator: Katherine Herbert; Co-Principal Investigator: Edward Moskal, Thomas Marlowe, Nina Goodey, Jerry Fails, Emily Hill, <b>Chris Leberknight</b>, Donal MacVeigh (June 1, 2013 – May 31, 2019).</li>
+          </ul>
     </section>
     <!-- Team -->
     <section id="team" class="py-5 bg-alt">
@@ -139,51 +157,55 @@
                      <div id="t-desc"><p id="bio">Anna is a computational linguist. She has worked on a number of different projects, such as cross-lingual approaches to morpho-syntactic tagging,  learner corpora, and automatic idiom recognition. She is currently a Co-PI (with Chris Leberknight) on the project that applies linguistic insights to measure and circumvent Internet censorship.  She co-authored a book on resource-light morphology, co-edited nine volumes on various topics related to NLP and published 40+ peer-reviewed articles in journals and conference proceedings. Her work has been funded by the US Army Research Lab, the US Air Force Research Lab, the US National Science Foundation.</p></div>
                  </div>
              </div>
-             <div class="container mem-box">
-                 <div id="t-img"> <img class="mem-pic" src="{% static 'img/ej.jpg' %}"></div>
-                 <div class ="b-text">
-                     <div id="t-nt"> <p class="lead msu-red">Eric Joyce</p><p>Adjunct Professor</p></div>
-                     <div id="t-desc"><p id ="bio">Eric is an adjunct professor of Computer Science. His research interests include artificial intelligence, machine learning, natural language processing, heuristic and oppositional search, and game theory.</p></div>
-                 </div>
-             </div>
          </div>
          <div class="container mem-box-cont">
               <h3>Students</h3>
              <div class="container mem-box">
-                 <div id="t-img"> <img class="mem-pic" src="{% static 'img/kk.jpg' %}"></div>
-                 <div class ="b-text">
-                     <div id="t-nt"> <p class="lead msu-red">Kateryna Kaplun</p><p>Masters Student</p></div>
-                     <div id="t-desc"><p id ="bio">Kateryna received her undergraduate degree in Mathematics and Justice Studies from Montclair State University. Currently, she is pursuing a master's degree in Statistics at Montclair State University. Her research interests include interdisciplinary topics that relate mathematics, statistics, computer science, and justice studies. </p></div>
-                 </div>
-             </div>
-             <div class="container mem-box">
-                 <div id="t-img"></div>
-                 <div class ="b-text no-pic">
-                     <div id="t-nt"> <p class="lead msu-red">Kei Yin Ng</p><p>Masters Student</p></div>
-                     <div id="t-desc"><p id ="bio">Kei received her undergraduate degree from the Chinese University of Hong Kong in the field of Japanese Studies. She is currently pursuing a master's degree at Montclair State University concentrating on Computational Linguistics. She is interested in natural language processing and text analytics.</p></div>
-                 </div>
-             </div>
-             <div class="container mem-box">
                  <div id="t-img"> <img class="mem-pic" src="{% static 'img/mk.jpg' %}"></div>
                  <div class ="b-text">
-                     <div id="t-nt"> <p class="lead msu-red">Matthew Kadish</p><p>Masters Student</p></div>
+                     <div id="t-nt"> <p class="lead msu-red">Matthew Kadish</p><p>Graduate</p></div>
                      <div id="t-desc"><p id ="bio">Matthew received his undergraduate degree from Montclair State University, majoring in English and minoring in Linguistics and German. His future graduate studies will focus on linguistics, and his previous experience includes research with Dr. Jonathan Howell on the nuances of prosody.</p></div>
                  </div>
              </div>
              <div class="container mem-box">
                  <div id="t-img"> <img class="mem-pic" src="{% static 'img/ms1.jpg' %}"></div>
                  <div class ="b-text">
-                     <div id="t-nt"> <p class="lead msu-red">Micheal Shehata</p><p>Masters Student</p></div>
+                     <div id="t-nt"> <p class="lead msu-red">Micheal Shehata</p><p>Graduate</p></div>
                      <div id="t-desc"><p id ="bio">Michael recently received his BA in Linguistics from Montclair State University in January 2018, and is currently pursuing a graduate certificate in Computational Linguistics. Born and raised in Egypt, Micheal is a native Arabic speaker. His areas of interest include Machine Learning, Artificial intelligence, and Data Analysis. He is currently working on a publication in Arabic/English Code Switching among native Arabic speakers. where he will be collecting and analyzing Arabic data from authors who were sentenced to jail when they wrote criticizing their governments. Using this data, he hopes to find a pattern showing what is more likely to be censored based on the collected data.</p></div>
                  </div>
              </div>
              <div class="container mem-box">
                  <div id="t-img"> <img class="mem-pic" src="{% static 'img/mg.jpg' %}"></div>
                  <div class ="b-text">
-                     <div id="t-nt"> <p class="lead msu-red">Matthew Goldeck</p><p>Undergraduate Student</p></div>
-                     <div id="t-desc"><p id ="bio">Matthew is pursuing a BS in Computer Science at Montclair State University. He is interested in exploring the applications of data analysis, with a particular focus on big data and machine learning. </p></div>
+                     <div id="t-nt"> <p class="lead msu-red">Matthew Goldeck</p><p>Undergraduate</p></div>
+                     <div id="t-desc"><p id ="bio">Matt is pursuing his BS in Computer Science at MSU. He's interested in data science with a particular focus on relational databases, machine learning, and data analysis. He likes history, running, and taking long walks through Stack Overflow.</p></div>
                  </div>
              </div>
+             <div class="container mem-box">
+                 <div id="t-img"></div>
+                 <div class ="b-text no-pic">
+                     <div id="t-nt"> <p class="lead msu-red">Kei Yin Ng</p><p>Graduate</p></div>
+                     <div id="t-desc"><p id ="bio">Kei received her undergraduate degree from the Chinese University of Hong Kong in the field of Japanese Studies. She is currently pursuing a master's degree at Montclair State University concentrating on Computational Linguistics. She is interested in natural language processing and text analytics.</p></div>
+                 </div>
+             </div>
+           </div>
+         <div class="container mem-box-cont">
+           <h3>Alumni</h3>
+           <div class="container mem-box">
+               <div id="t-img"> <img class="mem-pic" src="{% static 'img/ej.jpg' %}"></div>
+               <div class ="b-text">
+                   <div id="t-nt"> <p class="lead msu-red">Eric Joyce</p><p>Adjunct Professor</p></div>
+                   <div id="t-desc"><p id ="bio">Eric was an adjunct professor of Computer Science at MSU. His research interests include artificial intelligence, machine learning, natural language processing, heuristic and oppositional search, and game theory. He is currently pursuing a PhD at Stevens Institute of Technology.</p></div>
+               </div>
+           </div>
+           <div class="container mem-box">
+               <div id="t-img"> <img class="mem-pic" src="{% static 'img/kk.jpg' %}"></div>
+               <div class ="b-text">
+                   <div id="t-nt"> <p class="lead msu-red">Kateryna Kaplun</p><p>Graduate</p></div>
+                   <div id="t-desc"><p id ="bio">Kateryna received her undergraduate degree in Mathematics and Justice Studies, and her master's in Statistics from Montclair State University. Her research interests include interdisciplinary topics that relate mathematics, statistics, computer science, and justice studies. </p></div>
+               </div>
+           </div>
+       </div>
          </div>
      </div>
     </section>
